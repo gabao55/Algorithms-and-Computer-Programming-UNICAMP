@@ -1,3 +1,7 @@
+#   Jogo dos Detetives e Assassinos #
+
+
+#Entrada:
 pessoas = {}
 pessoas['assassino'] = []
 pessoas['vitima'] = []
@@ -15,6 +19,8 @@ while linhas != 0:
     pessoas['vitima'].append(vitima)
     pessoas['detetive'].append(detetive)
     linhas -= 1
+    
+#Início do Algoritmo:
 for i in pessoas['assassino']:
     if i not in todos:
         todos.append(i)
@@ -26,7 +32,7 @@ for k in pessoas['detetive']:
         todos.append(k)
 todos.sort()
 
-
+#Saída:
 for i in todos:
     if i in pessoas['assassino'] and i in pessoas['vitima'] and i not in pessoas['detetive']:
         print(60 * '-')
