@@ -1,2 +1,56 @@
 # First-Program
-My first code in GitHub
+#My first code in GitHub
+a = input('')
+if a.isdigit():
+    x = int(a)
+    tipo_numero1 = 'int'
+else:
+    tipo_numero1 = 'float'
+    x = float(a)
+b = input('')
+c = input('')
+if c.isdigit():
+    y = int(c)
+    tipo_numero2 = 'int'
+else:
+    tipo_numero2 = 'float'
+    y = float(c)
+if b == '+':
+    if tipo_numero1 == 'int' and tipo_numero2 == 'int':
+        print(x+y)
+    else:
+        print(format(x + y, '.2f'))
+elif b == '/':
+    if y == 0:
+        print('Erro.')
+    else:
+        print(format(x/y, '.2f'))
+elif b == '**':
+    if tipo_numero1 == 'int' and tipo_numero2 == 'int':
+        print(x ** y)
+    else:
+        print(format(x ** y, '.2f'))
+elif b == '-':
+    if tipo_numero1 == 'int' and tipo_numero2 == 'int':
+        print(x - y)
+    else:
+        print(format(x - y, '.2f'))
+elif b == '//':
+    if y == 0:
+        print('Erro.')
+    elif tipo_numero1 == 'int' and tipo_numero2 == 'int':
+        print(x // y)
+    else:
+        print(format(x // y, '.2f'))
+elif b == '*':
+    if tipo_numero1 == 'int' and tipo_numero2 == 'int':
+        print(x * y)
+    else:
+        print(format(x * y, '.2f'))
+elif b == '%':
+    if y == 0:
+        print('Erro.')
+    elif tipo_numero1 == 'int' and tipo_numero2 == 'int':
+        print(x % y)
+    else:
+        print(format(x % y, '.2f'))
