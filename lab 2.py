@@ -1,4 +1,4 @@
-#   Calculadora:    #
+#   Minicalculadora:    #
 
 
 #Entrada:
