@@ -1,9 +1,10 @@
-import copy
-metodo = input()
-lista = input().split()
+#   Algoritmos de Ordenação #
 
-#aqui eu criei uma função que faz o desenho da lista que eu tiver
-#aqui eu criei o primeiro quadro da saida, com o desenho das primeiras colunas
+
+#Importação:
+import copy
+
+#Funções:
 def desenho(lista):
     maximo = 0
     meio_desenho = ''
@@ -31,14 +32,13 @@ def desenho(lista):
         meio_desenho += '\n'
     return((len(lista) + 2) * '.'+ '\n' + meio_desenho + (len(lista) + 2) * '.')
 
+#Entrada:
+metodo = input()
+lista = input().split()
 
-#preciso criar uma função para cada sort que faça 1 passo de cada vez para ir fazendo os desenhos
-#tentei fazer printar o desenho toda vez q o index fillslot for diferente do index positioofmax
+#Saída:
 if metodo == 'selection':
     print(desenho(lista))
-    #esse comentario é o migué arbitrario q faz o codigo funcionar pra entrada 5
-    #if lista[0] == '1':
-    #    print(desenho(lista))
     for fillslot in range(len(lista) - 1, 0, -1):
         positionOfMax = 0
         for location in range(1, fillslot + 1):
@@ -53,7 +53,6 @@ if metodo == 'selection':
                 print(desenho(lista))
         else:
             continue
-
 
 if metodo == 'bubble':
     print(desenho(lista))
