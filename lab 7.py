@@ -1,3 +1,7 @@
+#   Critérios para Aprovação    #
+
+
+#Funções:
 def tupla_float_int(x):
     x = x[1:-1]
     x = x.split(',')
