@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
+#   Caracterização de Triângulos    #
+
+
+#Entrada:
 a = float(input(''))
 b = float(input(''))
 c = float(input(''))
+
+#Início do Algoritmo e Saída juntos:
 if a == b and a == c:
     print('Triângulo equilátero.')
     if a**2 > b**2 + c**2 or b**2 > a**2 + c**2 or c**2 > a**2 + b**2:
