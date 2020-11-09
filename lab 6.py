@@ -5,8 +5,10 @@ pessoas['detetive'] = []
 linhas = int(input(''))
 teste = linhas
 todos = []
+
 if linhas == 0:
     print('Valor inválido na entrada.')
+
 while linhas != 0:
     assassino, vitima, detetive = input().split()
     pessoas['assassino'].append(assassino)
@@ -23,10 +25,8 @@ for k in pessoas['detetive']:
     if k not in todos:
         todos.append(k)
 todos.sort()
-#criei um dicionario com todas as pessoas ja divididas entre assassino, vitima e detetive
-#criei tambem um lista em ordem alfabetica com o nome de todas as pessoas (todos)
-#consegui acertar a classificação deles entre detetive, assassino e vitima
-#agora preciso descobrir como fazer para dizer se a vitima do assassinato era vitima inocente, detetive ou assassino
+
+
 for i in todos:
     if i in pessoas['assassino'] and i in pessoas['vitima'] and i not in pessoas['detetive']:
         print(60 * '-')
