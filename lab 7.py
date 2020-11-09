@@ -1,35 +1,39 @@
-nota_atividades = [float(x) for x in input().split()]
 def tupla_float_int(x):
     x = x[1:-1]
     x = x.split(',')
     f = float(x[0])
     i = int(x[1])
     return(f,i)
+
+#Entradas:
+nota_atividades = [float(x) for x in input().split()]
 nota_labs = [tupla_float_int(x) for x in input().split()]
 nota_provas = [float(x) for x in input().split()]
 frequência = int(input(''))
+
+#Início do Algoritmo:
 soma_atividades = 0
 n_atividades = len(nota_atividades)
 for i in nota_atividades:
     soma_atividades += i
 media_atividades = ((soma_atividades/n_atividades))
-#ate aqui ta tudo certo
 soma_labs = 0
 soma_pesos = 0
+
 for j in nota_labs:
     soma_labs += j[0] * j[1]
     soma_pesos += j[1]
 media_labs = (soma_labs/soma_pesos)
 media_provas = ((2 * nota_provas[0] + 3 * nota_provas[1])/5)
 media_ponderada = ((0.6 *media_provas + 0.3 * media_labs + 0.1 * media_atividades))
-#quero descobrir como deixar a media ponderada com 1 casa decimal
+
 lista = []
 lista.append(media_provas)
 lista.append(media_ponderada)
 lista.append(media_labs)
 media_preliminar = min(lista)
-#ja sei todas as medias, falta colocar a media final, as condições de aprovação e reprovação e o print de todas as medias.
-#as medias que tenho sao chamadas de media_atividades, media_labs, media_provas, media_ponderada e media_preliminar.
+
+#Saídas:
 if frequência < 75:
     print('Média das atividades conceituais:', format(media_atividades, '.1f'))
     print('Média das tarefas de laboratório:', format(media_labs, '.1f'))
