@@ -1,7 +1,14 @@
 # -*- coding: utf-8 -*-
+
+#   ASCII art   #
+
+
+#Entrada:
 a = input('')
 b = int(input(''))
 c = input('')
+
+#Início do Algoritmo:
 d = b - (b//2)
 g = b - (b//2) - 1
 e = d
@@ -10,6 +17,8 @@ f = d + b - 1
 x = 0
 y = 0
 z = 2 * b - 1
+
+#Saída:
 if a == 'TR' and b >= 3:
     for i in range(1, b+1, 2):
         print(i * c)
