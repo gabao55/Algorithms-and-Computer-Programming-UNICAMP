@@ -1,12 +1,11 @@
-#   Minicalculadora:    #
+#   Minicalculator:    #
 
-
-#Entrada:
+#Input:
 a = input('')
 b = input('')
 c = input('')
 
-#Início do Algoritmo:
+#Defining type of numbers:
 if a.isdigit():
     x = int(a)
     tipo_numero1 = 'int'
@@ -21,7 +20,7 @@ else:
     tipo_numero2 = 'float'
     y = float(c)
     
-#Saída:
+#Output:
 if b == '+':
     if tipo_numero1 == 'int' and tipo_numero2 == 'int':
         print(x+y)
