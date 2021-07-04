@@ -1,10 +1,9 @@
-#   Corrida de Lesmas   #
+#   Slug Race   #
 
-
-#Entrada:
+#Input:
 a = int(input(''))
 
-#Início do Algoritmo:
+#Algorithm:
 lista = []
 i = 0
 j = 1
@@ -14,7 +13,7 @@ while i < a:
     lista.append(b)
     i += 1
     
-#Saída:
+#Output:
 if len(lista) > 100:
     print('Valor inválido na linha 1.')
 else:
