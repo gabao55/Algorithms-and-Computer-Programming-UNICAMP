@@ -1,9 +1,9 @@
-#   Minissomadora   #
+#   Miniadder   #
 
-#Entradas:
+#Input:
 tipodonumero1 = input('')
 
-#Início do Algoritmo:
+#Algorithm:
 if tipodonumero1=='i':
     a = int(input(''))
 elif tipodonumero1=='f':
@@ -14,5 +14,5 @@ if tipodonumero2=='i':
 elif tipodonumero2=='f':
     b = float(input(''))
     
-#Saída:
+#Output:
 print(format(a + b, '.2f')) if (tipodonumero1=='f' or tipodonumero2=='f') else print(a + b)
