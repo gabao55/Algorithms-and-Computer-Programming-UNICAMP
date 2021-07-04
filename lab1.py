@@ -1,6 +1,5 @@
 #   Minissomadora   #
 
-
 #Entradas:
 tipodonumero1 = input('')
 
